@@ -1,7 +1,18 @@
-{{hero}}
-<input type="text" [(ngModel)]="sentence" placeholder="Enter a sentence">
-<!-- <button (click)="translateText()">Печать предсказания</button> -->
-<!-- <p>Результат предсказания: {{ message }}</p> -->
-<button (click)="sendSentence()">Отправить</button>
-<p>Translation: {{ translation }}</p>
+<img class="Logo" src="../../assets/Logo.jpg" alt="">
+<div class="translation">
+    <div class="translation__from">
+        <h3 class="translation__from-header">Английский</h3>
+        <input class="translation__input" type="text" [(ngModel)]="sentence" placeholder="Enter a sentence">
+    </div>
+    <div class="translation__to">
+        <h3 class="translation__to-header">Русский</h3>
+        <div class="translation__output">
+            <p>{{ translation }}</p>
+        </div>
+    </div>
+</div>
+<div class="translation_btn">
+    <button class="button" (click)="sendSentence()">Отправить</button>
+</div>
+
 

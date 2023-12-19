@@ -17,10 +17,8 @@ import { FormsModule } from '@angular/forms';
 
 export class MyMachineAppComponent {
   translation!: string;
-  hero = 'Windstorm';
   sentence: string = '';
   constructor(private http: HttpClient) { }
-  message!: object;
   
   sendSentence() {
     const apiUrl = 'http://127.0.0.1:8000/fr';
